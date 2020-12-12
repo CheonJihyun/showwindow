@@ -1,0 +1,14 @@
+body {
+	background-color : rgb(13, 13, 13);
+	overflow : hidden;
+}
+
+.main p {
+	text-align : center;
+}
+
+.main img {
+	padding-top : 3%;
+	width : 68%;
+	height : auto;
+}

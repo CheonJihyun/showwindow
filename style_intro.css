@@ -1,0 +1,247 @@
+/* All Device */
+/* 모든 해상도를 위한 공통 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨.*/
+
+@font-face{
+	font-family : DXCt2B-H;
+	src : url(font/DXCt2B-H.ttf);
+}
+
+@font-face {
+	font-family : mssansserif;
+	src : url(font/Microsoft-Sans-Serif.ttf);
+}
+
+@font-face {
+	font-family : neodgm;
+	src : url(font/neodgm.ttf);
+}
+
+body {
+	background-color : rgb(57, 129, 129);
+	font-family : DXCt2B-H;
+	overflow : scroll;
+}
+
+/* title */
+.title {
+	position : fixed;
+	left : 0;
+	right : 0;
+	bottom : 0;
+	z-index : +100;
+	width : 100%;
+	height : 2rem;
+}
+
+.title img {
+	position : fixed;
+	left : 0;
+	right : 0;
+	bottom : 0;
+	height : 2rem;
+}
+
+@media all and (min-width:1025px){
+	.title {
+		width : 100%;
+		height : 4rem;
+	}
+
+	.title img {
+		width : 100%;
+		height : auto;
+	}
+}
+
+/* 메뉴 아이콘 */
+.menu {
+	position : fixed;
+	left : 0;
+	right : 0;
+	top : 0;
+	z-index : +100;
+	width : 10%;
+	height : 4rem;
+	font-family : mssansserif;
+	float : right;
+	margin : 1%;
+}
+
+.menu img {
+	position : relative;
+	left : 0;
+	right : 0;
+	top : 0;
+	margin-top : 10%;
+	width : 4em;
+	height : auto;
+}
+
+.menu p {
+	color : rgb(204, 204, 204);
+	font-size : 1em;
+	margin : 0;
+	padding : 0;
+}
+
+/* intro-content */
+.intro-page {
+	position : relative;
+	height : 100%;
+	margin : 0 0 5% 0;
+	padding : 0;
+	float : right;
+}
+
+.intro-content img {
+	width : 20rem;
+	height : auto;
+	float : right;
+	padding-right : 8%;
+	padding-top : 1.5%;
+}
+
+.intro-text {
+	float : left;
+	padding-left : 15%;
+	padding-top : 10%;
+	padding-bottom : 10%;
+}
+
+.intro-text p {
+	text-align : right;
+	font-size : 1rem;
+}
+
+@media all and (min-width:1025px){
+	.intro-content img {
+		width : 30%;
+		padding-right : 13%;
+	}
+}
+
+/* 팝업 설명창 */
+.layer-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: +10;
+}
+
+.layer-popup.show {
+  display: block;
+}
+
+.modal-dialog {
+  width : 80%;
+  margin : 5% auto;
+}
+
+.modal-content {
+	padding-bottom : 5%;
+	text-align: center;
+}
+
+.modal-content p {
+	font-size : 1.2rem;
+	font-family : neodgm;
+	color : rgb(195, 195, 195);
+	padding : 2%;
+}
+
+.container img {
+	position : relative;
+	height : 25rem;
+	width : auto;
+	margin : 0;
+	padding : 0;
+}
+
+.container video {
+	position : relative;
+	width : 60%;
+	height : auto;
+	margin-top : 5%;
+}
+
+.container iframe {
+	position : relative;
+	width : 32rem;
+	height : 18rem;
+	margin-top : 5%;
+}
+
+/* list 공통 */
+.list {
+	padding : 10%;
+}
+
+.list-content {
+	width : 80%;
+	height : 25rem;
+	margin-top : 5%;
+	margin-left : 10%;
+	margin-right : 5%;
+	padding : 5%;
+	overflow-x : scroll;
+	overflow-y : hidden;
+	white-space : nowrap;
+	/*background-color : rgb(221, 200, 94);*/
+	/*background-color : rgb(195, 195, 195);*/
+	background-color : rgb(67, 139, 139);
+}
+
+.list-content img {
+	height : 100%;
+	width : auto;
+	position : relative;
+	padding-right : 3%;
+	cursor : pointer;
+}
+
+#illustration {
+	float : center;
+}
+
+/* footage */
+.foot {
+	position : relative;
+	clear : left;
+	padding : 10%;
+}
+
+.foot p {
+	text-align : center;
+	font-family : DXCt2B-H;
+	font-size : 0.85em;
+}
+
+
+
+
+/* 768px 미만 해상도의 모바일 기기를 위한 코드를 작성한다.
+모든 해상도에서 이 코드가 실행된다.
+미디어 쿼리를 지원하지 않는 모바일 기기를 위해 미디어 쿼리 구문을 사용하지 않는다. */
+
+
+/* Tablet & Desktop Device */
+@media all and (min-width:768px) {
+/* 사용자 해상도가 768px 이상일 때 이 코드가 실행됨.
+태블릿과 데스크탑의 공통 코드를 작성한다. */
+}
+
+/* Tablet Device */
+@media all and (min-width:768px) and (max-width:1024px) {
+/* 사용자 해상도가 768px 이상이고 1024px 이하일 때 이 코드가 실행됨.
+아이패드 또는 비교적 작은 해상도의 랩탑이나 데스크톱에 대응하는 코드를 작성한다. */
+}
+
+/* Desktop Device */
+@media all and (min-width:1025px) {
+/* 사용자 해상도가 1025px 이상일 때 이 코드가 실행됨.
+1025px 이상의 이상의 랩탑 또는 데스크탑에 대응하는 코드를 작성한다. */
+}
