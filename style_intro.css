@@ -16,7 +16,7 @@
 	src : url(font/neodgm.ttf);
 }
 
-html { scroll-behavior : smooth; }
+/* html { scroll-behavior : smooth; } */
 
 body {
 	background-color : rgb(57, 129, 129);
