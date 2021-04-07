@@ -87,7 +87,9 @@ body {
 	text-decoration : none;
 }
 
-.menu a { text-decoration : none; }
+.menu a:any-link {
+	text-decoration : none;
+}
 
 /* intro-content */
 .intro-page {
