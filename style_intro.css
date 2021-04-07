@@ -86,6 +86,8 @@ body {
 	padding : 0;
 }
 
+.menu a { text-decoration : none; }
+
 /* intro-content */
 .intro-page {
 	position : relative;
