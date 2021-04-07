@@ -16,6 +16,8 @@
 	src : url(font/neodgm.ttf);
 }
 
+html { scroll-behavior : smooth; }
+
 body {
 	background-color : rgb(57, 129, 129);
 	font-family : DXCt2B-H;
